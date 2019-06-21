@@ -1,4 +1,4 @@
-# Boilerplate for JS tasks
+# Numbers Generator
 
 **Read the guideline before start**
 
