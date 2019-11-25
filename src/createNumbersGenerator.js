@@ -1,11 +1,11 @@
 'use strict';
 
 /**
- * Write a function (factory) creating a function (device) returning a number
- * from an array given to a factory. Each device call should return the next
- * number from the array. If `min` and `max` were provided the device should
- * return only numbers from the given range (including `min` and `max`). If
- * there is no more matching numbers in the array return undefined.
+ * Write a function (factory) accepting `numbers` array and returning a function
+ * (device). Each device call should return the next number from the array.
+ * If `min` and `max` were provided the device should return only numbers which
+ * are not less than `min` and not creater than `max`). If there is no more
+ * matching numbers in the array return `undefined`.
  *
  * For example:
  *
@@ -14,7 +14,7 @@
  * console.log(generator1()); // 3
  * console.log(generator1()); // undefined
  *
- * const generator2 = createNumbersGenerator([1, 3, 0, 2, 5], 2, 4)
+ * const generator2 = createNumbersGenerator([1, 3, 0, 2, 5], 1.5, 4.5)
  * console.log(generator2()); // 3
  * console.log(generator2()); // 2
  * console.log(generator2()); // undefined
